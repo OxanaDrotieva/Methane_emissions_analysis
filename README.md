@@ -10,4 +10,3 @@ Postgres is the database we intend to use.
 
 ## Machine Learning
 SciKitLearn is the ML library we'll be using. Plotly and HVPlot.
-Unsupervised Clustering Algorithim will be used to find trends.
