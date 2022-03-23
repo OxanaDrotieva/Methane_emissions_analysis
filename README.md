@@ -19,6 +19,8 @@ This project is created to analyze greenhouse gas emissions of different countri
 
 [Kaggle data link](https://www.kaggle.com/datasets/kkhandekar/methane-emissions-across-the-world-19902018)
 
+[The World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
+
 
 
 ### Key questions to be answered:
