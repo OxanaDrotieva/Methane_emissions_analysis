@@ -19,4 +19,4 @@ Decision Trees
 
 Unsupervised Clustering Algorithm
 - Uncover trends in the data
-- Country, GDP, Emissions axis data; filter by year
+- Country, GDP, Emissions axis data; filter by year possibly
