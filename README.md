@@ -1,4 +1,12 @@
-# Potentional Machine Learning Models
+# Machine Learning Models
+
+## Questions to Answer
+1. Is there a relationship between methane emission and GDP?
+2. When GDP is higher, does gas emissions go up, down, or not related?
+3. Can previous GDP and Emissions data help predict future methane emissions?
+
+
+## Potential ML models
 
 Libraries used:
 - Scikit-learn
