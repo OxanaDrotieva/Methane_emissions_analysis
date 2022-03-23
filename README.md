@@ -14,3 +14,6 @@
 ### GDP by Country and Year
 
 ![gdp_snap.png](gdp_snap.png)
+
+### Extra Data:
+- Climate Change Initiatives 
