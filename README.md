@@ -1,30 +1,13 @@
-# Methane_emissions_analysis
-Final Project Data Analysis and Visualization Bootcamp
 
-![images/Project_Cover.png](images/Project_Cover.png)
-
-### Communication protocols
-
-- Group #3 meets up on Tuesdays, Thursdays, Fridays and Saturdays at 7pm. 
-- All the communication is held via Slack
-- In case of an urgent question text to personal phone numbers of  team members.
+# Possible Technologies to be Used
 
 
+## Data Cleaning and Analysis
+Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
 
-## Overview of the project
+## Database Storage
+Postgres is the database we intend to use.
 
-This project is created to analyze greenhouse gas emissions of different countries and sectors (agriculture, industrial processes, fugitive emissions, waste etc.).
-
-### Data source
-
-[Kaggle data link](https://www.kaggle.com/datasets/kkhandekar/methane-emissions-across-the-world-19902018)
-
-[The World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
-
-
-
-### Key questions to be answered:
-
-- Is there a relationship between methane emissions and GDP of the countries?
-- What countries methane emissions have steadily declined over the last five years?
-- Is there a relationship between methane emissions and energy consumption?
+## Machine Learning
+SciKitLearn is the ML library we'll be using. Plotly and HVPlot.
+Unsupervised Clustering Algorithim will be used to find trends.
