@@ -15,6 +15,10 @@ Final Project Data Analysis and Visualization Bootcamp
 
 This project is created to analyze greenhouse gas emissions of different countries and sectors (agriculture, industrial processes, fugitive emissions, waste etc.).
 
+### Lucidchart
+
+![images/Lucidchart.PNG](images/Lucidchart.PNG)
+
 ### Data source
 
 [Kaggle data link](https://www.kaggle.com/datasets/kkhandekar/methane-emissions-across-the-world-19902018)
