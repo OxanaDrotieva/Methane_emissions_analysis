@@ -1,7 +1,7 @@
 # Methane_emissions_analysis
 Final Project Data Analysis and Visualization Bootcamp
 
-
+![images/Project_Cover.png](images/Project_Cover.png)
 
 ### Communication protocols
 
