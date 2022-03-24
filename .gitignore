@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 # removing methane_hist_emissions
 *.csv
+*.xls
 # C extensions
 *.so
 
