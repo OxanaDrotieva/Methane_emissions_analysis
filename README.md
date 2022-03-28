@@ -34,7 +34,7 @@ This project is created to analyze greenhouse gas emissions of different countri
 - Is there a relationship between methane emissions and energy consumption?
 
 ## Data Cleaning Process for ML with Python
-## Identify & Drop Unused Columns 
+### Identify & Drop Unused Columns 
 * Methane data: two columns (gas & unit) were identified and dropped from the data-set.
 * GDP data: two columns (indicator name & indicator code) were identified and dropped from the data-set.
 
@@ -46,31 +46,31 @@ This project is created to analyze greenhouse gas emissions of different countri
 
 ![GDPData_AfterCl.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/GDPData_AfterCl.png)
 
-## Drop Missing Data
+### Drop Missing Data
 * Drop missing data for both Methane and GDP data-set.
 ![DropMissingData_Methane.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/DropMissingData_Methane.png)
 
 ![DropMissingData_GDP.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/DropMissingData_GDP.png)
 
-## Remove Countries That Have No Emission Values 
+### Remove Countries That Have No Emission Values 
 Drop rows with countries that don't have emission data or both Methane and GDP data (with corrected country names.
 ![Countries_noEmissions.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/Countries_noEmissions.png)
 
 ![Countries_noEmissions_CorrectedName.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/Countries_noEmissions_CorrectedName.png)
 
-## Remove Countries That Have Different Spelling in Both Methane and GDP data
+### Remove Countries That Have Different Spelling in Both Methane and GDP data
 Create a list of countries with corrected spelling for all countries.
 ![Countries_DiffSpelling.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/Countries_DiffSpelling.png)
 
-## Transpose Data
+### Transpose Data
 ![TransposeData.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/TransposeData.png)
 
 ![DF_TransposedPlot.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/DF_TransposedPlot.png)
 
-## Data Correlation Between Values
+### Data Correlation Between Values
 ![DataCorrelation.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/DataCorrelation.png)
 
-## Merge DatFrames
+### Merge DatFrames
 ![MergedDF.png](https://github.com/OxanaDrotieva/Methane_emissions_analysis/blob/cleaning_data/images/MergedDF.png)
 
 ## Target Variable
