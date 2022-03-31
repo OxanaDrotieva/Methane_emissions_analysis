@@ -1,27 +1,38 @@
 # Database
 
+An AWS RDS database was created and connected to Postgres.
+
 ## ERD 
 [ERD Link](https://app.quickdatabasediagrams.com/#/d/H3orn0)
 
-![ERD_diagram.png](ERD_diagram.png)
+![resources/images/ERD_diagram.png](resources/images/ERD_diagram.png)
 
-## Sample Datasets
+## Two tables were created in PgAdmin and the data was imported into the tables
 
-### Methane Emmissions by Country and Year
+### Query
 
-#### Sample data
-![methane_snap.png](methane_snap.png)
+![resources/images/query.png](resources/images/query.png)
 
-#### Restructured 
-![update_methane_snap.png](update_methane_snap.png)
+### Methane Emmissions table
 
-### GDP by Country and Year
+![resources/images/methane_snap.png](resources/images/methane_snap.png)
 
-#### Sample Data
-![gdp_snap.png](gdp_snap.png)
+### GDP table
 
-#### Restructured
-![updated_gdp_snap.png](updated_gdp_snap.png)
+![resources/images/GDP_snap.png](resources/images/GDP_snap.png)
 
-### Extra Data:
-- Climate Change Initiatives 
+## The tables were then joined using an inner join and two new tables were created
+
+### Query
+
+### Merged Data table
+
+![resources/images/inner_join.png](resources/images/inner_join.png)
+
+- This table will be used to identify the relationship between emissions and gdp for every sector.
+
+### Sector Specific Data table
+
+![resources/images/sector_table.png](resources/images/sector_table.png)
+
+- This table can be used to view the total emissions of each country and their GDP
