@@ -25,6 +25,13 @@ An AWS RDS database was created and connected to Postgres.
 
 ### Query
 
+![resources/images/query2.png](resources/images/query2.png)
+
+- The tables were joined using an inner join
+- The merged_data table was created to hold the joined query data
+- The two tables were joined and then filtered for a specific sector
+- A new table was created to store the filtered data
+
 ### Merged Data table
 
 ![resources/images/inner_join.png](resources/images/inner_join.png)
