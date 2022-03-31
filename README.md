@@ -13,11 +13,11 @@ An AWS RDS database was created and connected to Postgres.
 
 ![resources/images/query.png](resources/images/query.png)
 
-### Methane Emmissions table
+### Methane_data table
 
 ![resources/images/methane_snap.png](resources/images/methane_snap.png)
 
-### GDP table
+### GDP_data table
 
 ![resources/images/GDP_snap.png](resources/images/GDP_snap.png)
 
