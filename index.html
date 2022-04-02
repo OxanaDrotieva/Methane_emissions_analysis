@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methane Emissions</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="static/css/style.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"/>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-<body class="bg-dark">
+<body class="p-3 mb-2 bg-light text-dark">
     <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar navbar-light p-3 mb-2 bg-light text-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">Methane Emissions</a>
         </nav>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron bg-cover text-white">
         <h1 class="display-4">Methane Emissions Around the World</h1>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-3 mb-2 bg-info text-white">
         <div class="row">
             <div class="row">
                 <div class="col-md-4">
@@ -49,20 +59,35 @@
     </div>
 
     <div class="container-fluid">
+        <!-- The div that holds our map -->
+        <div id="mapid"></div>
+
+        <!-- Leaflet JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+        <!-- API key -->
+        <script type="text/javascript" src="static/js/config.js"></script>
+        <!-- Our JavaScript -->
+        <script type="text/javascript" src="static/js/challenge_logic.js"></script>
+    </div>
+
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <form class="bg-dark" style="font-family: inherit; font-size: 1rem;">
+                <form class="p-3 mb-2 bg-light text-dark" style="font-family: inherit; font-size: 1rem;">
                     <p>Filter Search</p>
-                    <ul class="list-group bg-dark" style="font-family: inherit; font-size: 1rem;">
-                        <li class="list-group-item bg-dark" style="font-family: inherit; font-size: 1rem;">
+                    <ul class="list-group p-3 mb-2 bg-light text-dark" style="font-family: inherit; font-size: 1rem;">
+                        <li class="list-group-item p-3 mb-2 bg-light text-dark" style="font-family: inherit; font-size: 1rem;">
                             <label for="country">Select Country</label>
                             <select id="selCountry" onchange="optionChanged(this.value)" placeholder="us" id="country" class="form-control"></select>
                         </li>
-                        <li class="list-group-item bg-dark" style="font-family: inherit; font-size: 1rem;">
+                        <li class="list-group-item p-3 mb-2 bg-light text-dark" style="font-family: inherit; font-size: 1rem;">
                             <label for="sector">Select Sector</label>
                             <select id="selSector" onchange="optionChanged(this.value)" placeholder="Agriculture" id="sector" class="form-control"></select>
                         </li>
-                        <li class="list-group-item bg-dark" style="font-family: inherit; font-size: 1rem;">
+                        <li class="list-group-item p-3 mb-2 bg-light text-dark" style="font-family: inherit; font-size: 1rem;">
                             <label for="state">Select Year</label>
                             <select id="selYear" onchange="optionChanged(this.value)" placeholder="2000" id="year" class="form-control"></select>
                         </li>
