@@ -45,7 +45,7 @@ The dataset that we collected are in the .csv files. Both the methane emissions 
 * Normalization of data
 * merging datasets 
 
-Some of the libraries and tools that will include: Pandas, PostgresSQL, AWS, JavaScript, html, Excel, Tableau, Lucid-chart, etc. We can look into some statistical models to see the relationship between them, i.e. they may have the same increasing or decreasing factor variable.
+Some of the libraries and tools that will include: Pandas, PostgresSQL, AWS, ML, JavaScript, html, Excel, Tableau, Lucid-chart, etc. We can look into some statistical models to see the relationship between them, i.e. they may have the same increasing or decreasing factor variable.
 
 Anticipated major challenges 
 
