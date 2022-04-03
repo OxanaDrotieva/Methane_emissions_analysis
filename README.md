@@ -49,6 +49,7 @@ Some of the libraries and tools that will include: Pandas, PostgresSQL, AWS, ML,
 
 Anticipated major challenges 
 
+* Original GDP dataset was represented in scientific notation with large numbers. Now the numbers are repreesented in billions. We had to convert in excel. 
 * Pivoting and finding a new dataset on a short notice.
 * Be cautious during the data transformation not change the raw dataset.
 * Having patience with each other as a team can be hard. Thus, we will need to be intentional on distributing responsibilities so that there are no duplication of efforts and meeting times that work for the team. 
