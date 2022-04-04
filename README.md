@@ -21,7 +21,7 @@ This project is created to analyze greenhouse gas emissions of different countri
 
 ### Lucidchart
 
-![images/Lucid.PNG](images/Lucid.PNG)
+![images/Lucid.png](images/Lucid.png)
 
 ### Data source
 
