@@ -19,6 +19,12 @@
 
     <!-- d3 JavaScript -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
@@ -60,17 +66,9 @@
 
     <div class="container-fluid">
         <!-- The div that holds our map -->
-        <div id="mapid"></div>
+        <div id="mapid" style="height:500px;width:100%;"></div>
 
-        <!-- Leaflet JavaScript -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
 
-        <!-- API key -->
-        <script type="text/javascript" src="static/js/config.js"></script>
-        <!-- Our JavaScript -->
-        <script type="text/javascript" src="static/js/challenge_logic.js"></script>
     </div>
 
     <div class="container-fluid">
@@ -114,8 +112,12 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
     <script src="static/js/data.js"></script>
     <script src="static/js/app.js"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/challenge_logic.js"></script>
 </body>
 </html>
