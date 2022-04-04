@@ -5,23 +5,23 @@ Final Project Data Analysis and Visualization Bootcamp
 
 ### Communication protocols
 
-- Group #3 meets up on Tuesdays, Thursdays, Fridays and Saturdays at 7pm. 
+- Group #3 meets up on Tuesdays and Thursdays  at 7pm via zoom. 
 - All the communication is held via Slack
 - In case of an urgent question text to personal phone numbers of  team members.
 
 ### Roles
-* Square: Oxana
-* Triangle: Samira
-* Circle: Rachel
-* X: Grace
+* Front End/ Dashboard: Oxana
+* Dashboard: Samira
+* Database, ML model: Rachel
+* Readme, Tableau: Grace
 
 ## Overview of the project
 
-This project is created to analyze greenhouse gas emissions of different countries and sectors (agriculture, industrial processes, fugitive emissions, waste etc.). The team will be working on information related to greenhouse emissions and GDP looking at countries around the world.
+This project is created to analyze greenhouse gas emissions of different countries and sectors (agriculture, industrial processes, fugitive emissions, waste etc.) and finding if there is a correlation between GDP of the country and its methane emission.
 
 ### Lucidchart
 
-![images/Lucidchart.PNG](images/Lucidchart.PNG)
+![images/Lucid.PNG](images/Lucid.PNG)
 
 ### Data source
 
@@ -29,19 +29,19 @@ This project is created to analyze greenhouse gas emissions of different countri
 
 [The World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
 
+[Countryeconomy.com/gdp]( https://countryeconomy.com/gdp)
 
 
-### Key questions to be answered:
 
-- Is there a relationship between methane emissions and GDP of the countries?
-- What countries methane emissions have steadily declined over the last five years?
-- Is there a relationship between methane emissions and energy consumption?
+### Key question to be answered:
+
+- Is there a correlation between methane emissions and GDP of the countries?
 
 ## Technical Description
 The dataset that we collected are in the .csv files. Both the methane emissions and GDP datasets will have to cleaned/reformat/reshape to be used for analysis of the project. Some steps that have been taken include:
 * Dropping missing data
-* Dropping missing rows
-* Transpose of data 
+* Filling some missing data
+* Transposing of data 
 * Normalization of data
 * merging datasets 
 
@@ -55,7 +55,7 @@ Anticipated major challenges
 * Having patience with each other as a team can be hard. Thus, we will need to be intentional on distributing responsibilities so that there are no duplication of efforts and meeting times that work for the team. 
 
 ## Data Cleaning Process 
-### Why years were dropped from data sources
+### Why years were dropped from GDP data sources
 * Years had missing values that could not be filled because it will be time consuming to fill in manually. 
 
 ### Navigation
