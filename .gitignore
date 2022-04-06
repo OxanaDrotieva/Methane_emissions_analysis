@@ -5,6 +5,8 @@ __pycache__/
 config.js
 # C extensions
 *.so
+*.csv
+*.xls
 
 # Distribution / packaging
 .Python
