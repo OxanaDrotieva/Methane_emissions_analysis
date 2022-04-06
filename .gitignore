@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# removing methane_hist_emissions
+*.csv
+*.xls
+
 config.js
 # C extensions
 *.so
