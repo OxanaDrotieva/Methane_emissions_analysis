@@ -52,7 +52,7 @@ An S3 Bucket was created to store our Geojson data.
 
 - Snippet of the Geojson file used for mapping of the data
 
-## Connecting the Database to the python
+## Connecting the Database to python
 
 ![resources/images/sqlalchemy.png](resources/images/sqlalchemy.png)
 
