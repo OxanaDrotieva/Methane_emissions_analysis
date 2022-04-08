@@ -56,4 +56,4 @@ An S3 Bucket was created to store our Geojson data.
 
 ![resources/images/sqlalchemy.png](resources/images/sqlalchemy.png)
 
-- SQLAlchemy was used to connect to the database in python to connect the tables to the machine learning model
+- SQLAlchemy was used to connect to the database in python to use the tables in the machine learning model
