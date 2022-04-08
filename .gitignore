@@ -5,7 +5,7 @@ __pycache__/
 # removing methane_hist_emissions
 *.csv
 *.xls
-
+config.py
 config.js
 # C extensions
 *.so
