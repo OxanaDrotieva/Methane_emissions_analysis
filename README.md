@@ -43,3 +43,11 @@ An AWS RDS database was created and connected to Postgres.
 ![resources/images/sector_table.png](resources/images/sector_table.png)
 
 - This table can be used to view the total emissions of each country and their GDP
+
+## S3 Bucket
+
+An S3 Bucket was created to store our Geojson data.
+
+![resources/images/geojson.png](resources/images/geojson.png)
+
+- Snippet of the Geojson file used for mapping of the data
