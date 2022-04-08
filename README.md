@@ -76,11 +76,11 @@ Anticipated major challenges
 #### Machine Learning model
 
 - Load in the data to Pandas
-- Use K-means clustering algorithm
 - Use elbow-curve to find the k
+- Use K-means clustering algorithm
 - Use hvscatter and scatter3D plot to visualize the clusters.
 
-## 
+
 
 #### Database
 
