@@ -503,15 +503,15 @@ year,country,sector,emissions
 2018,Ethiopia,Total excluding LUCF,103.11
 2018,Ethiopia,Total including LUCF,103.46
 2018,Ethiopia,Waste,3.6
-2018,European Union (27),Agriculture,216.4
-2018,European Union (27),Energy,77.73
-2018,European Union (27),Fugitive Emissions,54.27
-2018,European Union (27),Industrial Processes,1.5
-2018,European Union (27),Land-Use Change and Forestry,0.03
-2018,European Union (27),Other Fuel Combustion,23.45
-2018,European Union (27),Total excluding LUCF,396.8
-2018,European Union (27),Total including LUCF,396.83
-2018,European Union (27),Waste,101.17
+2018,European Union,Agriculture,216.4
+2018,European Union,Energy,77.73
+2018,European Union,Fugitive Emissions,54.27
+2018,European Union,Industrial Processes,1.5
+2018,European Union,Land-Use Change and Forestry,0.03
+2018,European Union,Other Fuel Combustion,23.45
+2018,European Union,Total excluding LUCF,396.8
+2018,European Union,Total including LUCF,396.83
+2018,European Union,Waste,101.17
 2018,Fiji,Agriculture,0.23
 2018,Fiji,Energy,0.33
 2018,Fiji,Fugitive Emissions,0
@@ -1366,15 +1366,6 @@ year,country,sector,emissions
 2018,South Africa,Total excluding LUCF,45.14
 2018,South Africa,Total including LUCF,45.38
 2018,South Africa,Waste,24.11
-2018,South Sudan,Agriculture,26.61
-2018,South Sudan,Energy,5.19
-2018,South Sudan,Fugitive Emissions,4.82
-2018,South Sudan,Industrial Processes,0
-2018,South Sudan,Land-Use Change and Forestry,0.44
-2018,South Sudan,Other Fuel Combustion,0.37
-2018,South Sudan,Total excluding LUCF,34.17
-2018,South Sudan,Total including LUCF,34.62
-2018,South Sudan,Waste,2.38
 2018,Spain,Agriculture,24.66
 2018,Spain,Energy,2.95
 2018,Spain,Fugitive Emissions,1.02
@@ -2188,15 +2179,15 @@ year,country,sector,emissions
 2017,Ethiopia,Total excluding LUCF,102.66
 2017,Ethiopia,Total including LUCF,103.12
 2017,Ethiopia,Waste,3.54
-2017,European Union (27),Agriculture,218.46
-2017,European Union (27),Energy,77.98
-2017,European Union (27),Fugitive Emissions,54.38
-2017,European Union (27),Industrial Processes,1.5
-2017,European Union (27),Land-Use Change and Forestry,0.36
-2017,European Union (27),Other Fuel Combustion,23.59
-2017,European Union (27),Total excluding LUCF,400.47
-2017,European Union (27),Total including LUCF,400.83
-2017,European Union (27),Waste,102.54
+2017,European Union,Agriculture,218.46
+2017,European Union,Energy,77.98
+2017,European Union,Fugitive Emissions,54.38
+2017,European Union,Industrial Processes,1.5
+2017,European Union,Land-Use Change and Forestry,0.36
+2017,European Union,Other Fuel Combustion,23.59
+2017,European Union,Total excluding LUCF,400.47
+2017,European Union,Total including LUCF,400.83
+2017,European Union,Waste,102.54
 2017,Fiji,Agriculture,0.23
 2017,Fiji,Energy,0.32
 2017,Fiji,Fugitive Emissions,0
@@ -3051,15 +3042,6 @@ year,country,sector,emissions
 2017,South Africa,Total excluding LUCF,44.99
 2017,South Africa,Total including LUCF,45.09
 2017,South Africa,Waste,23.71
-2017,South Sudan,Agriculture,25.25
-2017,South Sudan,Energy,5.24
-2017,South Sudan,Fugitive Emissions,4.87
-2017,South Sudan,Industrial Processes,0
-2017,South Sudan,Land-Use Change and Forestry,0.43
-2017,South Sudan,Other Fuel Combustion,0.37
-2017,South Sudan,Total excluding LUCF,32.78
-2017,South Sudan,Total including LUCF,33.21
-2017,South Sudan,Waste,2.3
 2017,Spain,Agriculture,24.36
 2017,Spain,Energy,2.96
 2017,Spain,Fugitive Emissions,1.02
@@ -3873,15 +3855,15 @@ year,country,sector,emissions
 2016,Ethiopia,Total excluding LUCF,100.81
 2016,Ethiopia,Total including LUCF,101.25
 2016,Ethiopia,Waste,3.48
-2016,European Union (27),Agriculture,219.51
-2016,European Union (27),Energy,78.23
-2016,European Union (27),Fugitive Emissions,54.49
-2016,European Union (27),Industrial Processes,1.5
-2016,European Union (27),Land-Use Change and Forestry,0.09
-2016,European Union (27),Other Fuel Combustion,23.74
-2016,European Union (27),Total excluding LUCF,403.14
-2016,European Union (27),Total including LUCF,403.23
-2016,European Union (27),Waste,103.91
+2016,European Union,Agriculture,219.51
+2016,European Union,Energy,78.23
+2016,European Union,Fugitive Emissions,54.49
+2016,European Union,Industrial Processes,1.5
+2016,European Union,Land-Use Change and Forestry,0.09
+2016,European Union,Other Fuel Combustion,23.74
+2016,European Union,Total excluding LUCF,403.14
+2016,European Union,Total including LUCF,403.23
+2016,European Union,Waste,103.91
 2016,Fiji,Agriculture,0.21
 2016,Fiji,Energy,0.31
 2016,Fiji,Fugitive Emissions,0
@@ -4736,15 +4718,6 @@ year,country,sector,emissions
 2016,South Africa,Total excluding LUCF,44.46
 2016,South Africa,Total including LUCF,44.53
 2016,South Africa,Waste,23.32
-2016,South Sudan,Agriculture,26.31
-2016,South Sudan,Energy,5.29
-2016,South Sudan,Fugitive Emissions,4.93
-2016,South Sudan,Industrial Processes,0
-2016,South Sudan,Land-Use Change and Forestry,0.58
-2016,South Sudan,Other Fuel Combustion,0.36
-2016,South Sudan,Total excluding LUCF,33.82
-2016,South Sudan,Total including LUCF,34.4
-2016,South Sudan,Waste,2.22
 2016,Spain,Agriculture,24.05
 2016,Spain,Energy,2.97
 2016,Spain,Fugitive Emissions,1.02
@@ -5558,15 +5531,15 @@ year,country,sector,emissions
 2015,Ethiopia,Total excluding LUCF,98.52
 2015,Ethiopia,Total including LUCF,98.95
 2015,Ethiopia,Waste,3.41
-2015,European Union (27),Agriculture,219.26
-2015,European Union (27),Energy,79.72
-2015,European Union (27),Fugitive Emissions,56.46
-2015,European Union (27),Industrial Processes,1.48
-2015,European Union (27),Land-Use Change and Forestry,0.03
-2015,European Union (27),Other Fuel Combustion,23.26
-2015,European Union (27),Total excluding LUCF,408.01
-2015,European Union (27),Total including LUCF,408.04
-2015,European Union (27),Waste,107.56
+2015,European Union,Agriculture,219.26
+2015,European Union,Energy,79.72
+2015,European Union,Fugitive Emissions,56.46
+2015,European Union,Industrial Processes,1.48
+2015,European Union,Land-Use Change and Forestry,0.03
+2015,European Union,Other Fuel Combustion,23.26
+2015,European Union,Total excluding LUCF,408.01
+2015,European Union,Total including LUCF,408.04
+2015,European Union,Waste,107.56
 2015,Fiji,Agriculture,0.2
 2015,Fiji,Energy,0.3
 2015,Fiji,Fugitive Emissions,0
@@ -6421,15 +6394,6 @@ year,country,sector,emissions
 2015,South Africa,Total excluding LUCF,44.56
 2015,South Africa,Total including LUCF,44.6
 2015,South Africa,Waste,22.92
-2015,South Sudan,Agriculture,25.71
-2015,South Sudan,Energy,5.34
-2015,South Sudan,Fugitive Emissions,4.98
-2015,South Sudan,Industrial Processes,0
-2015,South Sudan,Land-Use Change and Forestry,0.38
-2015,South Sudan,Other Fuel Combustion,0.36
-2015,South Sudan,Total excluding LUCF,33.2
-2015,South Sudan,Total including LUCF,33.58
-2015,South Sudan,Waste,2.15
 2015,Spain,Agriculture,23.89
 2015,Spain,Energy,3.03
 2015,Spain,Fugitive Emissions,1.03
@@ -7243,15 +7207,15 @@ year,country,sector,emissions
 2014,Ethiopia,Total excluding LUCF,95.15
 2014,Ethiopia,Total including LUCF,95.62
 2014,Ethiopia,Waste,3.36
-2014,European Union (27),Agriculture,217.52
-2014,European Union (27),Energy,79.1
-2014,European Union (27),Fugitive Emissions,56.41
-2014,European Union (27),Industrial Processes,1.5
-2014,European Union (27),Land-Use Change and Forestry,0.04
-2014,European Union (27),Other Fuel Combustion,22.7
-2014,European Union (27),Total excluding LUCF,407.54
-2014,European Union (27),Total including LUCF,407.58
-2014,European Union (27),Waste,109.41
+2014,European Union,Agriculture,217.52
+2014,European Union,Energy,79.1
+2014,European Union,Fugitive Emissions,56.41
+2014,European Union,Industrial Processes,1.5
+2014,European Union,Land-Use Change and Forestry,0.04
+2014,European Union,Other Fuel Combustion,22.7
+2014,European Union,Total excluding LUCF,407.54
+2014,European Union,Total including LUCF,407.58
+2014,European Union,Waste,109.41
 2014,Fiji,Agriculture,0.66
 2014,Fiji,Energy,0.25
 2014,Fiji,Fugitive Emissions,0
@@ -8106,15 +8070,6 @@ year,country,sector,emissions
 2014,South Africa,Total excluding LUCF,44.6
 2014,South Africa,Total including LUCF,44.69
 2014,South Africa,Waste,22.5
-2014,South Sudan,Agriculture,25.57
-2014,South Sudan,Energy,8.74
-2014,South Sudan,Fugitive Emissions,8.45
-2014,South Sudan,Industrial Processes,0
-2014,South Sudan,Land-Use Change and Forestry,0.56
-2014,South Sudan,Other Fuel Combustion,0.29
-2014,South Sudan,Total excluding LUCF,36.38
-2014,South Sudan,Total including LUCF,36.95
-2014,South Sudan,Waste,2.07
 2014,Spain,Agriculture,23.02
 2014,Spain,Energy,3.13
 2014,Spain,Fugitive Emissions,1.11
@@ -8928,15 +8883,15 @@ year,country,sector,emissions
 2013,Ethiopia,Total excluding LUCF,91.11
 2013,Ethiopia,Total including LUCF,91.57
 2013,Ethiopia,Waste,3.3
-2013,European Union (27),Agriculture,215.76
-2013,European Union (27),Energy,82.73
-2013,European Union (27),Fugitive Emissions,58.01
-2013,European Union (27),Industrial Processes,1.43
-2013,European Union (27),Land-Use Change and Forestry,0.02
-2013,European Union (27),Other Fuel Combustion,24.73
-2013,European Union (27),Total excluding LUCF,412.82
-2013,European Union (27),Total including LUCF,412.85
-2013,European Union (27),Waste,112.9
+2013,European Union,Agriculture,215.76
+2013,European Union,Energy,82.73
+2013,European Union,Fugitive Emissions,58.01
+2013,European Union,Industrial Processes,1.43
+2013,European Union,Land-Use Change and Forestry,0.02
+2013,European Union,Other Fuel Combustion,24.73
+2013,European Union,Total excluding LUCF,412.82
+2013,European Union,Total including LUCF,412.85
+2013,European Union,Waste,112.9
 2013,Fiji,Agriculture,0.65
 2013,Fiji,Energy,0.2
 2013,Fiji,Fugitive Emissions,0
@@ -9791,15 +9746,6 @@ year,country,sector,emissions
 2013,South Africa,Total excluding LUCF,44.26
 2013,South Africa,Total including LUCF,44.32
 2013,South Africa,Waste,22.08
-2013,South Sudan,Agriculture,25.24
-2013,South Sudan,Energy,12.14
-2013,South Sudan,Fugitive Emissions,11.93
-2013,South Sudan,Industrial Processes,0
-2013,South Sudan,Land-Use Change and Forestry,0.62
-2013,South Sudan,Other Fuel Combustion,0.22
-2013,South Sudan,Total excluding LUCF,39.38
-2013,South Sudan,Total including LUCF,40
-2013,South Sudan,Waste,2
 2013,Spain,Agriculture,22.33
 2013,Spain,Energy,3.41
 2013,Spain,Fugitive Emissions,1.14
@@ -10613,15 +10559,15 @@ year,country,sector,emissions
 2012,Ethiopia,Total excluding LUCF,87.23
 2012,Ethiopia,Total including LUCF,87.84
 2012,Ethiopia,Waste,3.24
-2012,European Union (27),Agriculture,216.08
-2012,European Union (27),Energy,84.83
-2012,European Union (27),Fugitive Emissions,60.15
-2012,European Union (27),Industrial Processes,1.47
-2012,European Union (27),Land-Use Change and Forestry,0.08
-2012,European Union (27),Other Fuel Combustion,24.68
-2012,European Union (27),Total excluding LUCF,418.96
-2012,European Union (27),Total including LUCF,419.04
-2012,European Union (27),Waste,116.58
+2012,European Union,Agriculture,216.08
+2012,European Union,Energy,84.83
+2012,European Union,Fugitive Emissions,60.15
+2012,European Union,Industrial Processes,1.47
+2012,European Union,Land-Use Change and Forestry,0.08
+2012,European Union,Other Fuel Combustion,24.68
+2012,European Union,Total excluding LUCF,418.96
+2012,European Union,Total including LUCF,419.04
+2012,European Union,Waste,116.58
 2012,Fiji,Agriculture,0.65
 2012,Fiji,Energy,0.15
 2012,Fiji,Fugitive Emissions,0
@@ -11476,15 +11422,6 @@ year,country,sector,emissions
 2012,South Africa,Total excluding LUCF,44.22
 2012,South Africa,Total including LUCF,44.29
 2012,South Africa,Waste,21.66
-2012,South Sudan,Agriculture,25.76
-2012,South Sudan,Energy,15.54
-2012,South Sudan,Fugitive Emissions,15.4
-2012,South Sudan,Industrial Processes,0
-2012,South Sudan,Land-Use Change and Forestry,0.49
-2012,South Sudan,Other Fuel Combustion,0.14
-2012,South Sudan,Total excluding LUCF,43.23
-2012,South Sudan,Total including LUCF,43.72
-2012,South Sudan,Waste,1.92
 2012,Spain,Agriculture,22.49
 2012,Spain,Energy,3.44
 2012,Spain,Fugitive Emissions,1.11
@@ -12298,15 +12235,15 @@ year,country,sector,emissions
 2011,Ethiopia,Total excluding LUCF,83.09
 2011,Ethiopia,Total including LUCF,83.67
 2011,Ethiopia,Waste,3.18
-2011,European Union (27),Agriculture,216.86
-2011,European Union (27),Energy,83.88
-2011,European Union (27),Fugitive Emissions,60.63
-2011,European Union (27),Industrial Processes,1.51
-2011,European Union (27),Land-Use Change and Forestry,0.05
-2011,European Union (27),Other Fuel Combustion,23.25
-2011,European Union (27),Total excluding LUCF,421.62
-2011,European Union (27),Total including LUCF,421.67
-2011,European Union (27),Waste,119.37
+2011,European Union,Agriculture,216.86
+2011,European Union,Energy,83.88
+2011,European Union,Fugitive Emissions,60.63
+2011,European Union,Industrial Processes,1.51
+2011,European Union,Land-Use Change and Forestry,0.05
+2011,European Union,Other Fuel Combustion,23.25
+2011,European Union,Total excluding LUCF,421.62
+2011,European Union,Total including LUCF,421.67
+2011,European Union,Waste,119.37
 2011,Fiji,Agriculture,0.65
 2011,Fiji,Energy,0.11
 2011,Fiji,Fugitive Emissions,0
@@ -13161,15 +13098,6 @@ year,country,sector,emissions
 2011,South Africa,Total excluding LUCF,43.58
 2011,South Africa,Total including LUCF,43.64
 2011,South Africa,Waste,21.24
-2011,South Sudan,Agriculture,23.8
-2011,South Sudan,Energy,18.95
-2011,South Sudan,Fugitive Emissions,18.87
-2011,South Sudan,Industrial Processes,0
-2011,South Sudan,Land-Use Change and Forestry,0.79
-2011,South Sudan,Other Fuel Combustion,0.07
-2011,South Sudan,Total excluding LUCF,44.6
-2011,South Sudan,Total including LUCF,45.39
-2011,South Sudan,Waste,1.85
 2011,Spain,Agriculture,22.95
 2011,Spain,Energy,3.34
 2011,Spain,Fugitive Emissions,1.15
@@ -13983,15 +13911,15 @@ year,country,sector,emissions
 2010,Ethiopia,Total excluding LUCF,82.38
 2010,Ethiopia,Total including LUCF,82.94
 2010,Ethiopia,Waste,3.12
-2010,European Union (27),Agriculture,221.51
-2010,European Union (27),Energy,86.33
-2010,European Union (27),Fugitive Emissions,61.04
-2010,European Union (27),Industrial Processes,1.57
-2010,European Union (27),Land-Use Change and Forestry,0.03
-2010,European Union (27),Other Fuel Combustion,25.3
-2010,European Union (27),Total excluding LUCF,431.93
-2010,European Union (27),Total including LUCF,431.95
-2010,European Union (27),Waste,122.51
+2010,European Union,Agriculture,221.51
+2010,European Union,Energy,86.33
+2010,European Union,Fugitive Emissions,61.04
+2010,European Union,Industrial Processes,1.57
+2010,European Union,Land-Use Change and Forestry,0.03
+2010,European Union,Other Fuel Combustion,25.3
+2010,European Union,Total excluding LUCF,431.93
+2010,European Union,Total including LUCF,431.95
+2010,European Union,Waste,122.51
 2010,Fiji,Agriculture,0.65
 2010,Fiji,Energy,0.06
 2010,Fiji,Fugitive Emissions,0
@@ -14846,15 +14774,6 @@ year,country,sector,emissions
 2010,South Africa,Total excluding LUCF,43.36
 2010,South Africa,Total including LUCF,43.44
 2010,South Africa,Waste,20.81
-2010,South Sudan,Agriculture,23.95
-2010,South Sudan,Energy,22.35
-2010,South Sudan,Fugitive Emissions,22.35
-2010,South Sudan,Industrial Processes,0
-2010,South Sudan,Land-Use Change and Forestry,0.54
-2010,South Sudan,Other Fuel Combustion,0
-2010,South Sudan,Total excluding LUCF,48.07
-2010,South Sudan,Total including LUCF,48.61
-2010,South Sudan,Waste,1.77
 2010,Spain,Agriculture,23.61
 2010,Spain,Energy,3.49
 2010,Spain,Fugitive Emissions,1.2
@@ -15668,15 +15587,15 @@ year,country,sector,emissions
 2009,Ethiopia,Total excluding LUCF,79.11
 2009,Ethiopia,Total including LUCF,79.46
 2009,Ethiopia,Waste,3.07
-2009,European Union (27),Agriculture,223.68
-2009,European Union (27),Energy,84.93
-2009,European Union (27),Fugitive Emissions,61.38
-2009,European Union (27),Industrial Processes,1.44
-2009,European Union (27),Land-Use Change and Forestry,0.03
-2009,European Union (27),Other Fuel Combustion,23.55
-2009,European Union (27),Total excluding LUCF,435.51
-2009,European Union (27),Total including LUCF,435.54
-2009,European Union (27),Waste,125.45
+2009,European Union,Agriculture,223.68
+2009,European Union,Energy,84.93
+2009,European Union,Fugitive Emissions,61.38
+2009,European Union,Industrial Processes,1.44
+2009,European Union,Land-Use Change and Forestry,0.03
+2009,European Union,Other Fuel Combustion,23.55
+2009,European Union,Total excluding LUCF,435.51
+2009,European Union,Total including LUCF,435.54
+2009,European Union,Waste,125.45
 2009,Fiji,Agriculture,0.66
 2009,Fiji,Energy,0.06
 2009,Fiji,Fugitive Emissions,0
@@ -16531,15 +16450,6 @@ year,country,sector,emissions
 2009,South Africa,Total excluding LUCF,42.49
 2009,South Africa,Total including LUCF,42.55
 2009,South Africa,Waste,19.93
-2009,South Sudan,Agriculture,24.81
-2009,South Sudan,Energy,21.09
-2009,South Sudan,Fugitive Emissions,21.09
-2009,South Sudan,Industrial Processes,0
-2009,South Sudan,Land-Use Change and Forestry,0.6
-2009,South Sudan,Other Fuel Combustion,0
-2009,South Sudan,Total excluding LUCF,47.62
-2009,South Sudan,Total including LUCF,48.22
-2009,South Sudan,Waste,1.72
 2009,Spain,Agriculture,24.09
 2009,Spain,Energy,3.45
 2009,Spain,Fugitive Emissions,1.25
@@ -17353,15 +17263,15 @@ year,country,sector,emissions
 2008,Ethiopia,Total excluding LUCF,76.2
 2008,Ethiopia,Total including LUCF,76.74
 2008,Ethiopia,Waste,3.02
-2008,European Union (27),Agriculture,225.36
-2008,European Union (27),Energy,89.51
-2008,European Union (27),Fugitive Emissions,65.93
-2008,European Union (27),Industrial Processes,1.67
-2008,European Union (27),Land-Use Change and Forestry,0.02
-2008,European Union (27),Other Fuel Combustion,23.57
-2008,European Union (27),Total excluding LUCF,443.84
-2008,European Union (27),Total including LUCF,443.86
-2008,European Union (27),Waste,127.31
+2008,European Union,Agriculture,225.36
+2008,European Union,Energy,89.51
+2008,European Union,Fugitive Emissions,65.93
+2008,European Union,Industrial Processes,1.67
+2008,European Union,Land-Use Change and Forestry,0.02
+2008,European Union,Other Fuel Combustion,23.57
+2008,European Union,Total excluding LUCF,443.84
+2008,European Union,Total including LUCF,443.86
+2008,European Union,Waste,127.31
 2008,Fiji,Agriculture,0.66
 2008,Fiji,Energy,0.07
 2008,Fiji,Fugitive Emissions,0
@@ -18216,15 +18126,6 @@ year,country,sector,emissions
 2008,South Africa,Total excluding LUCF,41.76
 2008,South Africa,Total including LUCF,41.87
 2008,South Africa,Waste,19.05
-2008,South Sudan,Agriculture,24.47
-2008,South Sudan,Energy,19.84
-2008,South Sudan,Fugitive Emissions,19.84
-2008,South Sudan,Industrial Processes,0
-2008,South Sudan,Land-Use Change and Forestry,0.74
-2008,South Sudan,Other Fuel Combustion,0
-2008,South Sudan,Total excluding LUCF,45.97
-2008,South Sudan,Total including LUCF,46.71
-2008,South Sudan,Waste,1.66
 2008,Spain,Agriculture,23.7
 2008,Spain,Energy,3.52
 2008,Spain,Fugitive Emissions,1.29
@@ -19038,15 +18939,15 @@ year,country,sector,emissions
 2007,Ethiopia,Total excluding LUCF,73.25
 2007,Ethiopia,Total including LUCF,73.94
 2007,Ethiopia,Waste,2.97
-2007,European Union (27),Agriculture,226.4
-2007,European Union (27),Energy,88.84
-2007,European Union (27),Fugitive Emissions,66.46
-2007,European Union (27),Industrial Processes,1.83
-2007,European Union (27),Land-Use Change and Forestry,0.1
-2007,European Union (27),Other Fuel Combustion,22.38
-2007,European Union (27),Total excluding LUCF,448.33
-2007,European Union (27),Total including LUCF,448.42
-2007,European Union (27),Waste,131.26
+2007,European Union,Agriculture,226.4
+2007,European Union,Energy,88.84
+2007,European Union,Fugitive Emissions,66.46
+2007,European Union,Industrial Processes,1.83
+2007,European Union,Land-Use Change and Forestry,0.1
+2007,European Union,Other Fuel Combustion,22.38
+2007,European Union,Total excluding LUCF,448.33
+2007,European Union,Total including LUCF,448.42
+2007,European Union,Waste,131.26
 2007,Fiji,Agriculture,0.67
 2007,Fiji,Energy,0.08
 2007,Fiji,Fugitive Emissions,0
@@ -19901,15 +19802,6 @@ year,country,sector,emissions
 2007,South Africa,Total excluding LUCF,40.9
 2007,South Africa,Total including LUCF,41.08
 2007,South Africa,Waste,18.23
-2007,South Sudan,Agriculture,24.55
-2007,South Sudan,Energy,18.59
-2007,South Sudan,Fugitive Emissions,18.59
-2007,South Sudan,Industrial Processes,0
-2007,South Sudan,Land-Use Change and Forestry,0.74
-2007,South Sudan,Other Fuel Combustion,0
-2007,South Sudan,Total excluding LUCF,44.74
-2007,South Sudan,Total including LUCF,45.48
-2007,South Sudan,Waste,1.6
 2007,Spain,Agriculture,25.28
 2007,Spain,Energy,3.54
 2007,Spain,Fugitive Emissions,1.34
@@ -20723,15 +20615,15 @@ year,country,sector,emissions
 2006,Ethiopia,Total excluding LUCF,67.28
 2006,Ethiopia,Total including LUCF,67.9
 2006,Ethiopia,Waste,2.91
-2006,European Union (27),Agriculture,225.28
-2006,European Union (27),Energy,92.47
-2006,European Union (27),Fugitive Emissions,70.57
-2006,European Union (27),Industrial Processes,1.84
-2006,European Union (27),Land-Use Change and Forestry,0.06
-2006,European Union (27),Other Fuel Combustion,21.9
-2006,European Union (27),Total excluding LUCF,454.4
-2006,European Union (27),Total including LUCF,454.47
-2006,European Union (27),Waste,134.82
+2006,European Union,Agriculture,225.28
+2006,European Union,Energy,92.47
+2006,European Union,Fugitive Emissions,70.57
+2006,European Union,Industrial Processes,1.84
+2006,European Union,Land-Use Change and Forestry,0.06
+2006,European Union,Other Fuel Combustion,21.9
+2006,European Union,Total excluding LUCF,454.4
+2006,European Union,Total including LUCF,454.47
+2006,European Union,Waste,134.82
 2006,Fiji,Agriculture,0.66
 2006,Fiji,Energy,0.08
 2006,Fiji,Fugitive Emissions,0
@@ -21586,15 +21478,6 @@ year,country,sector,emissions
 2006,South Africa,Total excluding LUCF,39.67
 2006,South Africa,Total including LUCF,39.71
 2006,South Africa,Waste,17.41
-2006,South Sudan,Agriculture,23.56
-2006,South Sudan,Energy,17.34
-2006,South Sudan,Fugitive Emissions,17.34
-2006,South Sudan,Industrial Processes,0
-2006,South Sudan,Land-Use Change and Forestry,0.38
-2006,South Sudan,Other Fuel Combustion,0
-2006,South Sudan,Total excluding LUCF,42.43
-2006,South Sudan,Total including LUCF,42.81
-2006,South Sudan,Waste,1.54
 2006,Spain,Agriculture,24.75
 2006,Spain,Energy,3.53
 2006,Spain,Fugitive Emissions,1.37
@@ -22408,15 +22291,15 @@ year,country,sector,emissions
 2005,Ethiopia,Total excluding LUCF,63.91
 2005,Ethiopia,Total including LUCF,64.58
 2005,Ethiopia,Waste,2.86
-2005,European Union (27),Agriculture,227.12
-2005,European Union (27),Energy,96.29
-2005,European Union (27),Fugitive Emissions,74.46
-2005,European Union (27),Industrial Processes,1.83
-2005,European Union (27),Land-Use Change and Forestry,0.11
-2005,European Union (27),Other Fuel Combustion,21.83
-2005,European Union (27),Total excluding LUCF,463.21
-2005,European Union (27),Total including LUCF,463.32
-2005,European Union (27),Waste,137.97
+2005,European Union,Agriculture,227.12
+2005,European Union,Energy,96.29
+2005,European Union,Fugitive Emissions,74.46
+2005,European Union,Industrial Processes,1.83
+2005,European Union,Land-Use Change and Forestry,0.11
+2005,European Union,Other Fuel Combustion,21.83
+2005,European Union,Total excluding LUCF,463.21
+2005,European Union,Total including LUCF,463.32
+2005,European Union,Waste,137.97
 2005,Fiji,Agriculture,0.66
 2005,Fiji,Energy,0.09
 2005,Fiji,Fugitive Emissions,0
@@ -23271,15 +23154,6 @@ year,country,sector,emissions
 2005,South Africa,Total excluding LUCF,39.72
 2005,South Africa,Total including LUCF,39.88
 2005,South Africa,Waste,16.61
-2005,South Sudan,Agriculture,24.35
-2005,South Sudan,Energy,16.09
-2005,South Sudan,Fugitive Emissions,16.09
-2005,South Sudan,Industrial Processes,0
-2005,South Sudan,Land-Use Change and Forestry,0.92
-2005,South Sudan,Other Fuel Combustion,0
-2005,South Sudan,Total excluding LUCF,41.91
-2005,South Sudan,Total including LUCF,42.83
-2005,South Sudan,Waste,1.48
 2005,Spain,Agriculture,25.28
 2005,Spain,Energy,3.69
 2005,Spain,Fugitive Emissions,1.37
@@ -24093,15 +23967,15 @@ year,country,sector,emissions
 2004,Ethiopia,Total excluding LUCF,61.59
 2004,Ethiopia,Total including LUCF,62.18
 2004,Ethiopia,Waste,2.81
-2004,European Union (27),Agriculture,229.54
-2004,European Union (27),Energy,98.54
-2004,European Union (27),Fugitive Emissions,77.23
-2004,European Union (27),Industrial Processes,1.75
-2004,European Union (27),Land-Use Change and Forestry,0.03
-2004,European Union (27),Other Fuel Combustion,21.31
-2004,European Union (27),Total excluding LUCF,472.73
-2004,European Union (27),Total including LUCF,472.76
-2004,European Union (27),Waste,142.91
+2004,European Union,Agriculture,229.54
+2004,European Union,Energy,98.54
+2004,European Union,Fugitive Emissions,77.23
+2004,European Union,Industrial Processes,1.75
+2004,European Union,Land-Use Change and Forestry,0.03
+2004,European Union,Other Fuel Combustion,21.31
+2004,European Union,Total excluding LUCF,472.73
+2004,European Union,Total including LUCF,472.76
+2004,European Union,Waste,142.91
 2004,Fiji,Agriculture,0.66
 2004,Fiji,Energy,0.09
 2004,Fiji,Fugitive Emissions,0
@@ -24956,15 +24830,6 @@ year,country,sector,emissions
 2004,South Africa,Total excluding LUCF,38.06
 2004,South Africa,Total including LUCF,38.11
 2004,South Africa,Waste,15.83
-2004,South Sudan,Agriculture,23.54
-2004,South Sudan,Energy,14.58
-2004,South Sudan,Fugitive Emissions,14.58
-2004,South Sudan,Industrial Processes,0
-2004,South Sudan,Land-Use Change and Forestry,0.69
-2004,South Sudan,Other Fuel Combustion,0
-2004,South Sudan,Total excluding LUCF,39.56
-2004,South Sudan,Total including LUCF,40.24
-2004,South Sudan,Waste,1.43
 2004,Spain,Agriculture,25.73
 2004,Spain,Energy,3.67
 2004,Spain,Fugitive Emissions,1.43
@@ -25778,15 +25643,15 @@ year,country,sector,emissions
 2003,Ethiopia,Total excluding LUCF,60.53
 2003,Ethiopia,Total including LUCF,61.15
 2003,Ethiopia,Waste,2.77
-2003,European Union (27),Agriculture,231.68
-2003,European Union (27),Energy,105.81
-2003,European Union (27),Fugitive Emissions,84.14
-2003,European Union (27),Industrial Processes,1.76
-2003,European Union (27),Land-Use Change and Forestry,0.13
-2003,European Union (27),Other Fuel Combustion,21.68
-2003,European Union (27),Total excluding LUCF,486.1
-2003,European Union (27),Total including LUCF,486.23
-2003,European Union (27),Waste,146.85
+2003,European Union,Agriculture,231.68
+2003,European Union,Energy,105.81
+2003,European Union,Fugitive Emissions,84.14
+2003,European Union,Industrial Processes,1.76
+2003,European Union,Land-Use Change and Forestry,0.13
+2003,European Union,Other Fuel Combustion,21.68
+2003,European Union,Total excluding LUCF,486.1
+2003,European Union,Total including LUCF,486.23
+2003,European Union,Waste,146.85
 2003,Fiji,Agriculture,0.66
 2003,Fiji,Energy,0.08
 2003,Fiji,Fugitive Emissions,0
@@ -26641,15 +26506,6 @@ year,country,sector,emissions
 2003,South Africa,Total excluding LUCF,37.52
 2003,South Africa,Total including LUCF,37.65
 2003,South Africa,Waste,15.07
-2003,South Sudan,Agriculture,23.11
-2003,South Sudan,Energy,13.07
-2003,South Sudan,Fugitive Emissions,13.07
-2003,South Sudan,Industrial Processes,0
-2003,South Sudan,Land-Use Change and Forestry,0.65
-2003,South Sudan,Other Fuel Combustion,0
-2003,South Sudan,Total excluding LUCF,37.57
-2003,South Sudan,Total including LUCF,38.22
-2003,South Sudan,Waste,1.39
 2003,Spain,Agriculture,25.58
 2003,Spain,Energy,3.61
 2003,Spain,Fugitive Emissions,1.47
@@ -27463,15 +27319,15 @@ year,country,sector,emissions
 2002,Ethiopia,Total excluding LUCF,61.48
 2002,Ethiopia,Total including LUCF,61.95
 2002,Ethiopia,Waste,2.72
-2002,European Union (27),Agriculture,235.4
-2002,European Union (27),Energy,106.69
-2002,European Union (27),Fugitive Emissions,86.12
-2002,European Union (27),Industrial Processes,1.64
-2002,European Union (27),Land-Use Change and Forestry,0.03
-2002,European Union (27),Other Fuel Combustion,20.57
-2002,European Union (27),Total excluding LUCF,493.01
-2002,European Union (27),Total including LUCF,493.04
-2002,European Union (27),Waste,149.29
+2002,European Union,Agriculture,235.4
+2002,European Union,Energy,106.69
+2002,European Union,Fugitive Emissions,86.12
+2002,European Union,Industrial Processes,1.64
+2002,European Union,Land-Use Change and Forestry,0.03
+2002,European Union,Other Fuel Combustion,20.57
+2002,European Union,Total excluding LUCF,493.01
+2002,European Union,Total including LUCF,493.04
+2002,European Union,Waste,149.29
 2002,Fiji,Agriculture,0.67
 2002,Fiji,Energy,0.08
 2002,Fiji,Fugitive Emissions,0
@@ -28326,15 +28182,6 @@ year,country,sector,emissions
 2002,South Africa,Total excluding LUCF,37.23
 2002,South Africa,Total including LUCF,37.28
 2002,South Africa,Waste,14.34
-2002,South Sudan,Agriculture,22.46
-2002,South Sudan,Energy,11.56
-2002,South Sudan,Fugitive Emissions,11.56
-2002,South Sudan,Industrial Processes,0
-2002,South Sudan,Land-Use Change and Forestry,0.3
-2002,South Sudan,Other Fuel Combustion,0
-2002,South Sudan,Total excluding LUCF,35.37
-2002,South Sudan,Total including LUCF,35.68
-2002,South Sudan,Waste,1.35
 2002,Spain,Agriculture,25.4
 2002,Spain,Energy,3.45
 2002,Spain,Fugitive Emissions,1.49
@@ -29148,15 +28995,15 @@ year,country,sector,emissions
 2001,Ethiopia,Total excluding LUCF,55.77
 2001,Ethiopia,Total including LUCF,56.17
 2001,Ethiopia,Waste,2.67
-2001,European Union (27),Agriculture,238.1
-2001,European Union (27),Energy,113.38
-2001,European Union (27),Fugitive Emissions,91.59
-2001,European Union (27),Industrial Processes,1.64
-2001,European Union (27),Land-Use Change and Forestry,0.02
-2001,European Union (27),Other Fuel Combustion,21.79
-2001,European Union (27),Total excluding LUCF,505.2
-2001,European Union (27),Total including LUCF,505.21
-2001,European Union (27),Waste,152.08
+2001,European Union,Agriculture,238.1
+2001,European Union,Energy,113.38
+2001,European Union,Fugitive Emissions,91.59
+2001,European Union,Industrial Processes,1.64
+2001,European Union,Land-Use Change and Forestry,0.02
+2001,European Union,Other Fuel Combustion,21.79
+2001,European Union,Total excluding LUCF,505.2
+2001,European Union,Total including LUCF,505.21
+2001,European Union,Waste,152.08
 2001,Fiji,Agriculture,0.7
 2001,Fiji,Energy,0.08
 2001,Fiji,Fugitive Emissions,0
@@ -30011,15 +29858,6 @@ year,country,sector,emissions
 2001,South Africa,Total excluding LUCF,34.04
 2001,South Africa,Total including LUCF,34.06
 2001,South Africa,Waste,11.45
-2001,South Sudan,Agriculture,21.43
-2001,South Sudan,Energy,10.06
-2001,South Sudan,Fugitive Emissions,10.06
-2001,South Sudan,Industrial Processes,0
-2001,South Sudan,Land-Use Change and Forestry,0.3
-2001,South Sudan,Other Fuel Combustion,0
-2001,South Sudan,Total excluding LUCF,32.8
-2001,South Sudan,Total including LUCF,33.1
-2001,South Sudan,Waste,1.31
 2001,Spain,Agriculture,25.16
 2001,Spain,Energy,3.46
 2001,Spain,Fugitive Emissions,1.54
@@ -30833,15 +30671,15 @@ year,country,sector,emissions
 2000,Ethiopia,Total excluding LUCF,53.51
 2000,Ethiopia,Total including LUCF,55.73
 2000,Ethiopia,Waste,2.62
-2000,European Union (27),Agriculture,243.01
-2000,European Union (27),Energy,112.6
-2000,European Union (27),Fugitive Emissions,90.72
-2000,European Union (27),Industrial Processes,1.66
-2000,European Union (27),Land-Use Change and Forestry,0.3
-2000,European Union (27),Other Fuel Combustion,21.88
-2000,European Union (27),Total excluding LUCF,511.5
-2000,European Union (27),Total including LUCF,511.8
-2000,European Union (27),Waste,154.24
+2000,European Union,Agriculture,243.01
+2000,European Union,Energy,112.6
+2000,European Union,Fugitive Emissions,90.72
+2000,European Union,Industrial Processes,1.66
+2000,European Union,Land-Use Change and Forestry,0.3
+2000,European Union,Other Fuel Combustion,21.88
+2000,European Union,Total excluding LUCF,511.5
+2000,European Union,Total including LUCF,511.8
+2000,European Union,Waste,154.24
 2000,Fiji,Agriculture,0.69
 2000,Fiji,Energy,0.08
 2000,Fiji,Fugitive Emissions,0
@@ -31696,15 +31534,6 @@ year,country,sector,emissions
 2000,South Africa,Total excluding LUCF,35.76
 2000,South Africa,Total including LUCF,36.14
 2000,South Africa,Waste,12.87
-2000,South Sudan,Agriculture,22.81
-2000,South Sudan,Energy,8.55
-2000,South Sudan,Fugitive Emissions,8.55
-2000,South Sudan,Industrial Processes,0
-2000,South Sudan,Land-Use Change and Forestry,8.94
-2000,South Sudan,Other Fuel Combustion,0
-2000,South Sudan,Total excluding LUCF,32.62
-2000,South Sudan,Total including LUCF,41.56
-2000,South Sudan,Waste,1.26
 2000,Spain,Agriculture,24.74
 2000,Spain,Energy,3.42
 2000,Spain,Fugitive Emissions,1.56
