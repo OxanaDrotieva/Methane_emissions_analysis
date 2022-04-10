@@ -12,11 +12,24 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 	accessToken: API_KEY
 });
 
+// Add radio buttons for GDP, methane emissions and emissions/GDP ratio data 
+let emission = new L.LayerGroup();
+let gdp = new L.LayerGroup();
+let ratio = new L.LayerGroup();
+
+let groupedOverlays = {
+  "Countries": {
+    "Methane Emission": emission,
+    "GDP": gdp,
+    "Metane Emission per Billion $ of GDP": ratio
+}
+};
+
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
 	center: [40.7, -94.5],
 	zoom: 3,
-	layers: [streets]
+	layers: [streets, groupedOverlays.Countries['Methane Emission']]
 });
 
 // Create a base layer that holds all three maps.
@@ -25,20 +38,8 @@ let baseMaps = {
   "Satellite": satelliteStreets
 };
 
-// 1. Add a 2nd layer group for the tectonic plate data.
-let gdp = new L.LayerGroup();
-let emission = new L.LayerGroup();
-let ratio = new L.LayerGroup();
-
-// 2. Add a reference to the tectonic plates group to the overlays object.
-let groupedOverlays = {
-  "Countries": {"GDP": gdp,
-  "Methane Emission": emission,
-  "Metane Emission per Billion $ of GDP": ratio}
-};
-
 var options = {
-  // Make the "Landmarks" group exclusive (use radio inputs)
+  // Make the "Counries" group exclusive (use radio inputs)
   exclusiveGroups: ["Countries"],
   // Show a checkbox next to non-exclusive group labels for toggling all
   groupCheckboxes: true
@@ -48,194 +49,147 @@ var options = {
 // layers are visible.
 L.control.groupedLayers(baseMaps, groupedOverlays, options).addTo(map);
 
-// Retrieve the earthquake GeoJSON data.
-d3.json("https://methane-bucket.s3.amazonaws.com/geojson.json").then(function(data) {
-
-  // This function returns the style data for each of the earthquakes we plot on
-  // the map. We pass the magnitude of the earthquake into two separate functions
-  // to calculate the color and radius.
-  // function styleInfo(feature) {
-  //   return {
-  //     opacity: 1,
-  //     fillOpacity: 1,
-  //     fillColor: getColor(feature.properties.mag),
-  //     color: "#000000",
-  //     // radius: getRadius(feature.properties.mag),
-  //     stroke: true,
-  //     weight: 0.5
-  //   };
-  // }
-
-  // This function determines the color of the marker based on the magnitude of the earthquake.
-  // function getColor(magnitude) {
-  //   if (magnitude > 6) {
-  //     return "maroon";
-  //   }
-  //   if (magnitude > 5) {
-  //     return "#ea2c2c";
-  //   }
-  //   if (magnitude > 4) {
-  //     return "#ea822c";
-  //   }
-  //   if (magnitude > 3) {
-  //     return "#ee9c00";
-  //   }
-  //   if (magnitude > 2) {
-  //     return "#eecc00";
-  //   }
-  //   if (magnitude > 1) {
-  //     return "#d4ee00";
-  //   }
-  //   return "#98ee00";
-  // }
-
-  // This function determines the radius of the earthquake marker based on its magnitude.
-  // Earthquakes with a magnitude of 0 were being plotted with the wrong radius.
-  // function getRadius(magnitude) {
-  //   if (magnitude === 0) {
-  //     return 1;
-  //   }
-  //   return magnitude * 4;
-  // }
+// Retrieve the GDP and emission GeoJSON data.
+d3.json("../geojson.json").then(function(data) {
+ // d3.json("https://methane-bucket.s3.amazonaws.com/geojson.json").then(function(data) {
   // data = "https://methane-bucket.s3.amazonaws.com/geojson.json"
-  // Creating a GeoJSON layer with the retrieved data.
+  // Creating a GeoJSON layer with the retrieved GDP data.
   L.choropleth(data, {
-    	// We turn each feature into a circleMarker on the map.
-    	valueProperty: 'GDP', // which property in the features to use
-      scale: ['blue', 'yellow'], // chroma.js scale - include as many as you like
-	    steps: 5, // number of breaks or steps in range
-	    mode: 'q', // q for quantile, e for equidistant, k for k-means
+    	// We turn each feature into a polygon on the map.
+      valueProperty: function(feature){
+        if ('GDP' in feature.properties){
+            return feature.properties.GDP["2010"]         
+        }
+          return 0},
+      scale: ['white', 'red'], // chroma.js scale - include as many as you like
+	    steps: 15, // number of breaks or steps in range
+	    mode: 'k', // q for quantile, e for equidistant, k for k-means
 	    style: {
               color: '#000000', // border color
               weight: 2,
               fillOpacity: 0.8
 	    },
-      // function(feature, latlng) {
-      // 		console.log(data);
-      // 		return L.circleMarker(latlng);
-      //   },
-      // We set the style for each circleMarker using our styleInfo function.
-    // style: styleInfo,
-     // We create a popup for each circleMarker to display the magnitude and location of the earthquake
+     // We create a popup for each contry to display its name and GDP 
      //  after the marker has been created and styled.
       onEachFeature: function(feature, layer) {
-              layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.GDP);
+        if ('GDP' in feature.properties && '2010' in feature.properties.GDP){
+              layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.GDP['2010']);}
     }
   }).addTo(gdp);
 
-  // Then we add the earthquake layer to our map.
-  gdp.addTo(map);
+  // Then we add the GDP layer to our map.
+  //gdp.addTo(map);
 
-
+  // Creating a GeoJSON layer with the retrieved emission data.
   L.choropleth(data, {
-      valueProperty: 'methane.Total including LUCF', // which property in the features to use
-      scale: ['blue', 'yellow'], // chroma.js scale - include as many as you like
-      steps: 5, // number of breaks or steps in range
-      mode: 'q', // q for quantile, e for equidistant, k for k-means
+    valueProperty: function(feature){
+      if ('methane' in feature.properties){
+        if('Total including LUCF' in feature.properties.methane){
+          return feature.properties.methane["Total including LUCF"]["2010"]
+        } 
+      }
+        return 0
+      }, // which property in the features to use
+      scale: ['white', 'red'], // chroma.js scale - include as many as you like
+      steps: 15, // number of breaks or steps in range
+      mode: 'k', // q for quantile, e for equidistant, k for k-means
       style: {
                 color: '#000000', // border color
                 weight: 2,
                 fillOpacity: 0.8
   },
     onEachFeature: function(feature, layer) {
-    layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.methane.Total including LUCF);
+      if ('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane){
+        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010']);
+      }
   }
   }).addTo(emission);
 
-  // Then we add the earthquake layer to our map.
-  emission.addTo(map);
+  L.choropleth(data, {
+    valueProperty: function(feature){
+      if ('methane' in feature.properties && 'GDP' in feature.properties){
+        if('Total including LUCF' in feature.properties.methane && '2010' in feature.properties.GDP){
+          return feature.properties.methane["Total including LUCF"]["2010"]/feature.properties.GDP['2010']
+        } 
+      }
+        return 0
 
+      }, // which property in the features to use
+      scale: ['white', 'red'], // chroma.js scale - include as many as you like
+      steps: 15, // number of breaks or steps in range
+      mode: 'k', // q for quantile, e for equidistant, k for k-means
+      style: {
+                color: '#000000', // border color
+                weight: 2,
+                fillOpacity: 0.8
+  },
+    onEachFeature: function(feature, layer) {
+      if (('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane) && ('GDP' in feature.properties && '2010' in feature.properties.GDP)){
+        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010'] + "<br>GDP: " + feature.properties.GDP['2010']);
+      }
+  }
+  }).addTo(ratio);
+  // Then we add the emission layer to our map.
+  //emission.addTo(map);
 
-  // 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week.
-  d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson").then(function(data) {
+  // Here we create a legend control object.
+  var legend = L.control({ position: 'bottom' })
+  // Add details for the legend
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend')
+    var limits = [0, 15]
+    var colors = ratio.options.colors
+    var labels = ['Low',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','High']
 
-    // // 4. Use the same style as the earthquake data.
-    // function styleInfo(feature) {
-    //   return {
-    //     opacity: 1,
-    //     fillOpacity: 1,
-    //     fillColor: getColor(feature.properties.mag),
-    //     color: "#000000",
-    //     radius: getRadius(feature.properties.mag),
-    //     stroke: true,
-    //     weight: 0.5
-    //   };
-    // }    
+    // Add min & max
+    div.innerHTML = '<div class="labels"><div class="min">' + limits[0] + '</div> \
+			<div class="max">' + limits[limits.length - 1] + '</div></div>'
+
+    limits.forEach(function (limit, index) {
+      labels.push('<li style="background-color: ' + colors[index] + '"></li>')
+    })
+
+    div.innerHTML += '<ul>' + labels.join('') + '</ul>'
+    return div
+  }
+  // Add legend to the map
+  legend.addTo(map)
+
   
-    // // 5. Change the color function to use three colors for the major earthquakes based on the magnitude of the earthquake.
-    // function getColor(magnitude) {
-    //   if (magnitude > 6) {
-    //     return "maroon";
-    //   }
-    //   if (magnitude > 5) {
-    //     return "#ea2c2c";
-    //   }
-    //     return "#ea822c" 
-    // }
-    
-    // // 6. Use the function that determines the radius of the earthquake marker based on its magnitude.
-    // function getRadius(magnitude) {
-    //   if (magnitude === 0) {
-    //     return 1;
-    //   }
-    //   return magnitude * 4;
-    // }
-    
-    // 7. Creating a GeoJSON layer with the retrieved data that adds a circle to the map 
-    // sets the style of the circle, and displays the magnitude and location of the earthquake
-    //  after the marker has been created and styled.
-    L.geoJson(data, {
-      // We turn each feature into a circleMarker on the map.
-    	pointToLayer: function(feature, latlng) {
-        console.log(data);
-        return L.circleMarker(latlng);
-      },
-      // We set the style for each circleMarker using our styleInfo function.
-      style: styleInfo,
-      // We create a popup for each circleMarker to display the magnitude and location of the earthquake
-      //  after the marker has been created and styled.
-      onEachFeature: function(feature, layer) {
-      layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
-    }
-    }).addTo(majorEQ);
-    });
-    // 8. Add the major earthquakes layer to the map.
-    majorEQ.addTo(map);
-    // 9. Close the braces and parentheses for the major earthquake data.
     });
 
     // Here we create a legend control object.
-let legend = L.control({
-  position: "bottomright"
+// let legend = L.control({
+//   position: "bottomright"
 
-});
+// });
 
-// Then add all the details for the legend
-legend.onAdd = function() {
-  let div = L.DomUtil.create("div", "info legend");
+// // Then add all the details for the legend
+// legend.onAdd = function() {
+//   let div = L.DomUtil.create("div", "info legend");
 
-  const magnitudes = [0, 1, 2, 3, 4, 5, 6];
-  const colors = [
-    "#98ee00",
-    "#d4ee00",
-    "#eecc00",
-    "#ee9c00",
-    "#ea822c",
-    "#ea2c2c",
-    "maroon"
-  ];
+//   const magnitudes = [0, 1, 2, 3, 4, 5, 6];
+//   const colors = [
+//     "#98ee00",
+//     "#d4ee00",
+//     "#eecc00",
+//     "#ee9c00",
+//     "#ea822c",
+//     "#ea2c2c",
+//     "maroon"
+//   ];
 
-// Looping through our intervals to generate a label with a colored square for each interval.
-  for (var i = 0; i < magnitudes.length; i++) {
-    console.log(colors[i]);
-    div.innerHTML +=
-      "<i style='background: " + colors[i] + "'></i> " +
-      magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
-    }
-    return div;
-  };
+// // // Looping through our intervals to generate a label with a colored square for each interval.
+// //   for (var i = 0; i < magnitudes.length; i++) {
+// //     console.log(colors[i]);
+// //     div.innerHTML +=
+// //       "<i style='background: " + colors[i] + "'></i> " +
+// //       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+// //     }
+// //     return div;
+// //   };
 
-  // Finally, we our legend to the map.
-  legend.addTo(map);
+//   // Finally, we our legend to the map.
+//   legend.addTo(map);
     
     
