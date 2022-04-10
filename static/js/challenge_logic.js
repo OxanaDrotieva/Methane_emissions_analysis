@@ -12,7 +12,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 	accessToken: API_KEY
 });
 
-// Add radio buttons for GDP, methane emissions and emissions/GDP ratio data 
+// Add layers for GDP, methane emissions and emissions/GDP ratio data 
 let emission = new L.LayerGroup();
 let gdp = new L.LayerGroup();
 let ratio = new L.LayerGroup();
@@ -27,12 +27,12 @@ let groupedOverlays = {
 
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
-	center: [40.7, -94.5],
-	zoom: 3,
+	center: [40.7, 10],
+	zoom: 2,
 	layers: [streets, groupedOverlays.Countries['Methane Emission']]
 });
 
-// Create a base layer that holds all three maps.
+// Create a base layer that holds two maps.
 let baseMaps = {
   "Streets": streets,
   "Satellite": satelliteStreets
@@ -45,7 +45,7 @@ var options = {
   groupCheckboxes: true
 };
 
-// Then we add a control to the map that will allow the user to change which
+// Add a control to the map that will allow the user to change which
 // layers are visible.
 L.control.groupedLayers(baseMaps, groupedOverlays, options).addTo(map);
 
@@ -55,7 +55,7 @@ d3.json("../geojson.json").then(function(data) {
   // data = "https://methane-bucket.s3.amazonaws.com/geojson.json"
   // Creating a GeoJSON layer with the retrieved GDP data.
   L.choropleth(data, {
-    	// We turn each feature into a polygon on the map.
+    	// Turn each feature into a polygon on the map.
       valueProperty: function(feature){
         if ('GDP' in feature.properties){
             return feature.properties.GDP["2010"]         
@@ -69,8 +69,7 @@ d3.json("../geojson.json").then(function(data) {
               weight: 2,
               fillOpacity: 0.8
 	    },
-     // We create a popup for each contry to display its name and GDP 
-     //  after the marker has been created and styled.
+     // Create a popup for each contry to display its name and GDP 
       onEachFeature: function(feature, layer) {
         if ('GDP' in feature.properties && '2010' in feature.properties.GDP){
               layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.GDP['2010']);}
@@ -98,6 +97,7 @@ d3.json("../geojson.json").then(function(data) {
                 weight: 2,
                 fillOpacity: 0.8
   },
+    // Create a popup for each contry to display its name and methane emission 
     onEachFeature: function(feature, layer) {
       if ('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane){
         layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010']);
@@ -105,7 +105,8 @@ d3.json("../geojson.json").then(function(data) {
   }
   }).addTo(emission);
 
-  L.choropleth(data, {
+  // Creating a GeoJSON layer with the GDP/emission ratio.
+  var choroplethLayer = L.choropleth(data, {
     valueProperty: function(feature){
       if ('methane' in feature.properties && 'GDP' in feature.properties){
         if('Total including LUCF' in feature.properties.methane && '2010' in feature.properties.GDP){
@@ -123,6 +124,7 @@ d3.json("../geojson.json").then(function(data) {
                 weight: 2,
                 fillOpacity: 0.8
   },
+  // Popup marker with country name, GDP and emission data
     onEachFeature: function(feature, layer) {
       if (('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane) && ('GDP' in feature.properties && '2010' in feature.properties.GDP)){
         layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010'] + "<br>GDP: " + feature.properties.GDP['2010']);
@@ -132,64 +134,32 @@ d3.json("../geojson.json").then(function(data) {
   // Then we add the emission layer to our map.
   //emission.addTo(map);
 
-  // Here we create a legend control object.
-  var legend = L.control({ position: 'bottom' })
+  // Create a legend control object.
+  var legend = L.control({ position: 'bottomright' })
   // Add details for the legend
-  legend.onAdd = function (map) {
+  legend.onAdd = function (ratio) {
     var div = L.DomUtil.create('div', 'info legend')
-    var limits = [0, 15]
-    var colors = ratio.options.colors
-    var labels = ['Low',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','High']
+    var limits = choroplethLayer.options.limits
+    var colors = choroplethLayer.options.colors
+    var labels = ['Lowest or no data',' ',' ',' ',' ',' ',' ','Highest']
+    
+    // Put labels on the legend
+    for (var i = 0; i < limits.length; i++) {
+      div.innerHTML += '<label>' + labels[i] + '</label>'}
+      
+    // a line break
+    div.innerHTML += '<br>';
+    
+    // Get colors for the legend
+    for (var i = 0; i < limits.length; i++) {
+      div.innerHTML +=
+          '<span style="background:' + colors[i] + '"></span> ';
+    }
 
-    // Add min & max
-    div.innerHTML = '<div class="labels"><div class="min">' + limits[0] + '</div> \
-			<div class="max">' + limits[limits.length - 1] + '</div></div>'
-
-    limits.forEach(function (limit, index) {
-      labels.push('<li style="background-color: ' + colors[index] + '"></li>')
-    })
-
-    div.innerHTML += '<ul>' + labels.join('') + '</ul>'
-    return div
-  }
-  // Add legend to the map
-  legend.addTo(map)
+    return div;
+  };
 
   
-    });
-
-    // Here we create a legend control object.
-// let legend = L.control({
-//   position: "bottomright"
-
-// });
-
-// // Then add all the details for the legend
-// legend.onAdd = function() {
-//   let div = L.DomUtil.create("div", "info legend");
-
-//   const magnitudes = [0, 1, 2, 3, 4, 5, 6];
-//   const colors = [
-//     "#98ee00",
-//     "#d4ee00",
-//     "#eecc00",
-//     "#ee9c00",
-//     "#ea822c",
-//     "#ea2c2c",
-//     "maroon"
-//   ];
-
-// // // Looping through our intervals to generate a label with a colored square for each interval.
-// //   for (var i = 0; i < magnitudes.length; i++) {
-// //     console.log(colors[i]);
-// //     div.innerHTML +=
-// //       "<i style='background: " + colors[i] + "'></i> " +
-// //       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
-// //     }
-// //     return div;
-// //   };
-
-//   // Finally, we our legend to the map.
-//   legend.addTo(map);
-    
-    
+  // Add legend to the map
+  legend.addTo(map)  
+});
