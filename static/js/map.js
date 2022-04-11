@@ -58,7 +58,7 @@ d3.json("../geojson.json").then(function(data) {
     	// Turn each feature into a polygon on the map.
       valueProperty: function(feature){
         if ('GDP' in feature.properties){
-            return feature.properties.GDP["2010"]         
+            return feature.properties.GDP["2018"]         
         }
           return 0},
       scale: ['white', 'red'], // chroma.js scale - include as many as you like
@@ -71,8 +71,8 @@ d3.json("../geojson.json").then(function(data) {
 	    },
      // Create a popup for each contry to display its name and GDP 
       onEachFeature: function(feature, layer) {
-        if ('GDP' in feature.properties && '2010' in feature.properties.GDP){
-              layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.GDP['2010']);}
+        if ('GDP' in feature.properties && '2018' in feature.properties.GDP){
+              layer.bindPopup("Country: " + feature.properties.name + "<br>GDP: " + feature.properties.GDP['2018'] + " billion $");}
     }
   }).addTo(gdp);
 
@@ -84,7 +84,7 @@ d3.json("../geojson.json").then(function(data) {
     valueProperty: function(feature){
       if ('methane' in feature.properties){
         if('Total including LUCF' in feature.properties.methane){
-          return feature.properties.methane["Total including LUCF"]["2010"]
+          return feature.properties.methane["Total including LUCF"]["2018"]
         } 
       }
         return 0
@@ -100,7 +100,7 @@ d3.json("../geojson.json").then(function(data) {
     // Create a popup for each contry to display its name and methane emission 
     onEachFeature: function(feature, layer) {
       if ('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane){
-        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010']);
+        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2018'] + " Metric tons of carbon dioxide equivalent");
       }
   }
   }).addTo(emission);
@@ -109,8 +109,8 @@ d3.json("../geojson.json").then(function(data) {
   var choroplethLayer = L.choropleth(data, {
     valueProperty: function(feature){
       if ('methane' in feature.properties && 'GDP' in feature.properties){
-        if('Total including LUCF' in feature.properties.methane && '2010' in feature.properties.GDP){
-          return feature.properties.methane["Total including LUCF"]["2010"]/feature.properties.GDP['2010']
+        if('Total including LUCF' in feature.properties.methane && '2018' in feature.properties.GDP){
+          return feature.properties.methane["Total including LUCF"]["2018"]/feature.properties.GDP['2018']
         } 
       }
         return 0
@@ -126,8 +126,8 @@ d3.json("../geojson.json").then(function(data) {
   },
   // Popup marker with country name, GDP and emission data
     onEachFeature: function(feature, layer) {
-      if (('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane) && ('GDP' in feature.properties && '2010' in feature.properties.GDP)){
-        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2010'] + "<br>GDP: " + feature.properties.GDP['2010']);
+      if (('methane' in feature.properties && 'Total including LUCF' in feature.properties.methane) && ('GDP' in feature.properties && '2018' in feature.properties.GDP)){
+        layer.bindPopup("Country: " + feature.properties.name + "<br>Methane Emission: " + feature.properties.methane['Total including LUCF']['2018'] + " Metric tons of carbon dioxide equivalent" + "<br>GDP: " + feature.properties.GDP['2018'] + " billion $");
       }
   }
   }).addTo(ratio);
