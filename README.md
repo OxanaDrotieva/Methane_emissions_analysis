@@ -2,12 +2,6 @@
 
 
 
-## Communication protocols
-
-- Group #3 meets up on Tuesdays and Thursdays  at 7pm via zoom. 
-- All the communication is held via Slack
-- In case of an urgent question text to personal phone numbers of  team members.
-
 ### Roles
 * Front End/ Dashboard: Oxana
 * Dashboard/ ETL: Samira
