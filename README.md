@@ -20,19 +20,19 @@ There is no relation between GDP and emissions.
 
 ### Setting up the data
 
-![resources/sector_df.html](resources/sector_df.html)
+![resources/sector_df.png](resources/sector_df.png)
 
 - The dataframe we used inlcuded year, country, gdp, emissions columns
 - The sector column was filtered for only the total data for emissions. We did this because the GDP data was connected to the countries and was therefore repeated for every secto skewing model.
 
-![resources/drop.html](resources/drop.html)
+![resources/drop.png](resources/drop.png)
 
 - The country and sector column were dropped from the dataframe because the values were not numerical
 - We tried get_dummies for the country column but did not get any valuable use of the column
 
 ### Determine K
 
-![resources/elbow.html](resources/elbow.html)
+![resources/elbow.png](resources/elbow.png)
 
 - The best fit k was determined by an Elbow Curve plotted by hvPlot
 
