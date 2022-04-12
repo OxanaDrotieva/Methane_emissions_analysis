@@ -30,11 +30,6 @@ There is no relation between GDP and emissions.
 - The country and sector column were dropped from the dataframe because the values were not numerical
 - We tried get_dummies for the country column but did not get any valuable use of the column
 
-### Determine K
-
-![resources/elbow.png](resources/elbow.png)
-
-- The best fit k was determined by an Elbow Curve plotted by hvPlot
 
 ### The Model
 
@@ -80,4 +75,6 @@ All of these efforts did not provide any further insight than the model above.
 
 We were not able to prove that a machine learning could be used to replicate the data. However, the model could not disprove our null hypthosis. There is a correlation between GDP and emissions. It is clear in the model that over time, as GDP increases so do Emissions. 
 
-More data would help 
+Further Analysis:
+1. More data could be beneficial in poviding a more adequate machine learning model. For example: Population data over the years for each country.
+2. 
