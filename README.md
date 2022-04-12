@@ -43,7 +43,7 @@ Anticipated major challenges
 * Be cautious during the data transformation not change the raw dataset.
 * Having patience with each other as a team can be hard. Thus, we will need to be intentional on distributing responsibilities so that there are no duplication of efforts and meeting times that work for the team. 
 
-#### ETL process
+# ETL process
 
 ###### The World GDP Data.xls was changed manually:
 
@@ -67,7 +67,7 @@ Anticipated major challenges
 
 
 
-#### Machine Learning model
+# Machine Learning model
 
 - Load in the data to Pandas
 - Use elbow-curve to find the k
@@ -76,7 +76,6 @@ Anticipated major challenges
 
 
 
-#### Database
 
 # Database
 
@@ -140,7 +139,7 @@ An S3 Bucket was created to store our Geojson data.
 
 
 
-#### Front End
+# Front End
 
 - Build a GitHub page as a dashboard for the project (HTML, CSS, JavaScript) including some information about methane, a map showing GDP, methane emissions, and a ratio emissions/GDP for each country
 - Using Tableau to get a better visualization for the final GitHub page.
