@@ -50,8 +50,8 @@ var options = {
 L.control.groupedLayers(baseMaps, groupedOverlays, options).addTo(map);
 
 // Retrieve the GDP and emission GeoJSON data.
-d3.json("../geojson.json").then(function(data) {
- // d3.json("https://methane-bucket.s3.amazonaws.com/geojson.json").then(function(data) {
+// d3.json("../geojson.json").then(function(data) {
+d3.json("https://methane-bucket.s3.amazonaws.com/geojson.json").then(function(data) {
   // data = "https://methane-bucket.s3.amazonaws.com/geojson.json"
   // Creating a GeoJSON layer with the retrieved GDP data.
   L.choropleth(data, {
