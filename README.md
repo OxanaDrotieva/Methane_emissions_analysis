@@ -195,6 +195,8 @@ An S3 Bucket was created to store our Geojson data.
 
 # Front End
 
+[GitHub page Link](https://oxanadrotieva.github.io/Methane_emissions_analysis/)
+
 - Build a GitHub page as a dashboard for the project (HTML, CSS, JavaScript) including some information about methane, a map showing GDP:
 
 ![images/map_gdp.png](images/map_gdp.png)
