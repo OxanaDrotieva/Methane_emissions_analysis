@@ -120,7 +120,7 @@ There is no relation between GDP and emissions.
 
 #### Correlation
 
-![resources/images/corr.png](resources/corr.png)
+![resources/images/corr.png](resources/images/corr.png)
 
 - GDP and emissions have the highest correlation of about 62%
 
