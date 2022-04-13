@@ -89,12 +89,12 @@ There is no relation between GDP and emissions.
 
 ### Setting up the data
 
-![resources/sector_df.png](resources/sector_df.png)
+![resources/images/sector_df.png](resources/images/sector_df.png)
 
 - The dataframe we used inlcuded year, country, gdp, emissions columns
 - The sector column was filtered for only the total data for emissions. We did this because the GDP data was connected to the countries and was therefore repeated for every secto skewing model.
 
-![resources/drop.png](resources/drop.png)
+![resources/images/drop.png](resources/images/drop.png)
 
 - The country and sector column were dropped from the dataframe because the values were not numerical
 - We tried get_dummies for the country column but did not get any valuable use of the column
@@ -104,7 +104,7 @@ There is no relation between GDP and emissions.
 
 #### hvPlot model
 
-![resources/hv_plot_image.png](resources/hv_plot_image.png)
+![resources/images/hv_plot_image.png](resources/images/hv_plot_image.png)
 
 - Two clusters formed
 - Class 1 inludes GDP data over 7000 and Emisions data over 375
@@ -112,15 +112,15 @@ There is no relation between GDP and emissions.
 
 #### 3D Model
 
-![resources/3d_image1.png](resources/3d_image1.png)
+![resources/images/3d_image1.png](resources/images/3d_image1.png)
 
-![resources/3d_image2.png](resources/3d_image2.png)
+![resources/images/3d_image2.png](resources/images/3d_image2.png)
 
 - The 3D model allow us to visulaize the data through the years
 
 #### Correlation
 
-![resources/corr.png](resources/corr.png)
+![resources/images/corr.png](resources/corr.png)
 
 - GDP and emissions have the highest correlation of about 62%
 
@@ -142,7 +142,7 @@ All of these efforts did not provide any further insight than the model above.
 
 ## Conclusion
 
-We were not able to prove that a machine learning could be used to replicate the data. However, the model could not disprove our null hypthosis. There is a correlation between GDP and emissions. It is clear in the model that over time, as GDP increases so do Emissions. 
+We were not able to prove that a machine learning could be used to replicate the data. However, the model could not disprove our null hypthosis. There is a correlation between GDP and emissions. It is clear in the model that over time, as GDP increases so do Emissions. The correlation between emissions and gdp also confirms this.
 
 Further Analysis:
 1. More data could be beneficial in poviding a more adequate machine learning model. For example: Population data over the years for each country.
