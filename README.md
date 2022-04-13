@@ -77,4 +77,4 @@ We were not able to prove that a machine learning could be used to replicate the
 
 Further Analysis:
 1. More data could be beneficial in poviding a more adequate machine learning model. For example: Population data over the years for each country.
-2. 
+2. Knowledge of climatae change iniatives. This information would be valuable in studying emissions over time for each country
