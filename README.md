@@ -70,67 +70,6 @@ Anticipated major challenges
 - Export new GDP, emissions, and merged dataframes as .csv files.
 
 
-
-# Machine Learning Models
-
-## Questions to Answer
-1. Is there a relationship between methane emission and GDP?
-2. When GDP is higher, does gas emissions go up, down, or not related?
-3. Can previous GDP and Emissions data help predict future methane emissions?
-
-
-## ML Model
-
-Libraries used:
-- Plotly
-- hvPlot
-
-### Null Hypothesis
-
-There is no relation between GDP and emissions. 
-
-## Analysis
-
-### Setting up the data
-
-![resources/images/sector_df.png](resources/images/sector_df.png)
-
-- The dataframe we used inlcuded year, country, gdp, emissions columns
-- The sector column was filtered for only the total data for emissions. We did this because the GDP data was connected to the countries and was therefore repeated for every secto skewing model.
-
-![resources/images/drop.png](resources/images/drop.png)
-
-- The country and sector column were dropped from the dataframe because the values were not numerical
-- We tried get_dummies for the country column but did not get any valuable use of the column
-
-
-### The Model
-
-#### hvPlot model
-
-![resources/images/hv_plot_image.png](resources/images/hv_plot_image.png)
-
-- Two clusters formed
-- Class 1 inludes GDP data over 7000 and Emisions data over 375
-- The top line of dots represents China over the years
-
-#### 3D Model
-
-![resources/images/3d_image1.png](resources/images/3d_image1.png)
-
-![resources/images/3d_image2.png](resources/images/3d_image2.png)
-
-- The 3D model allow us to visulaize the data through the years
-
-#### Correlation
-
-![resources/images/corr.png](resources/images/corr.png)
-
-- GDP and emissions have the highest correlation of about 62%
-
-
-
-
 # Database
 
 An AWS RDS database was created and connected to Postgres.
@@ -191,6 +130,63 @@ An S3 Bucket was created to store our Geojson data.
 
 - SQLAlchemy was used to connect to the database in python to use the tables in the machine learning model
 
+
+# Machine Learning Models
+
+## Questions to Answer
+1. Is there a relationship between methane emission and GDP?
+2. When GDP is higher, does gas emissions go up, down, or not related?
+3. Can previous GDP and Emissions data help predict future methane emissions?
+
+
+## ML Model
+
+Libraries used:
+- Plotly
+- hvPlot
+
+### Null Hypothesis
+
+There is no relation between GDP and emissions. 
+
+## Analysis
+
+### Setting up the data
+
+![resources/images/sector_df.png](resources/images/sector_df.png)
+
+- The dataframe we used inlcuded year, country, gdp, emissions columns
+- The sector column was filtered for only the total data for emissions. We did this because the GDP data was connected to the countries and was therefore repeated for every secto skewing model.
+
+![resources/images/drop.png](resources/images/drop.png)
+
+- The country and sector column were dropped from the dataframe because the values were not numerical
+- We tried get_dummies for the country column but did not get any valuable use of the column
+
+
+### The Model
+
+#### hvPlot model
+
+![resources/images/hv_plot_image.png](resources/images/hv_plot_image.png)
+
+- Two clusters formed
+- Class 1 inludes GDP data over 7000 and Emisions data over 375
+- The top line of dots represents China over the years
+
+#### 3D Model
+
+![resources/images/3d_image1.png](resources/images/3d_image1.png)
+
+![resources/images/3d_image2.png](resources/images/3d_image2.png)
+
+- The 3D model allow us to visulaize the data through the years
+
+#### Correlation
+
+![resources/images/corr.png](resources/images/corr.png)
+
+- GDP and emissions have the highest correlation of about 62%
 
 
 # Front End
