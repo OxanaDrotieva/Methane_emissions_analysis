@@ -2,7 +2,7 @@ function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selCountry");
 
-  d3.json("../geojson.json").then((data) => {   
+  d3.json("https://methane-bucket.s3.amazonaws.com/geojson.json").then((data) => {   
     var countries = [];
     for(var k in data.features) {
         countries.push(data.features[k].properties.name);
