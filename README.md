@@ -34,7 +34,11 @@ This project is created to analyze greenhouse gas emissions of different countri
 
 ## Technical Description
 
-Some of the libraries and tools that will include: Pandas, PostgresSQL, AWS, ML, JavaScript, html, plotly, Scikit.learn. hvPlot, Excel, Tableau, Lucid-chart, etc. We can look into some statistical models to see the relationship between them, i.e. they may have the same increasing or decreasing factor variable.
+Libraries and tools: 
+
+![images/Tool.png](images/Tool.png)
+
+ We can look into some statistical models to see the relationship between them, i.e. they may have the same increasing or decreasing factor variable.
 
 Anticipated major challenges 
 
@@ -124,30 +128,6 @@ There is no relation between GDP and emissions.
 
 - GDP and emissions have the highest correlation of about 62%
 
-## Challenges
-
-The model was very difficult to manipulate. We tried many different variations of manipulating the data to try and influence the model. 
-
-For example:
-1. We added a column dividing emissions and gdp. We then removed emissions adn gdp from the dataframe
-2. The year column was scaled and/or categorized 
-3. Get_dummies was used on the country column
-4. The country and sector columns were categorized before using get_dummies
-5. We used a dataframe with all the sectors minus the total sector (and tried all of the above again)
-etc...
-
-We also tried a Linear Regression model to no avail.
-
-All of these efforts did not provide any further insight than the model above. 
-
-## Conclusion
-
-We were not able to prove that a machine learning could be used to replicate the data. However, the model could not disprove our null hypthosis. There is a correlation between GDP and emissions. It is clear in the model that over time, as GDP increases so do Emissions. The correlation between emissions and gdp also confirms this.
-
-Further Analysis:
-1. More data could be beneficial in poviding a more adequate machine learning model. For example: Population data over the years for each country.
-2. Knowledge of climatae change iniatives. This information would be valuable in studying emissions over time for each country
-
 
 
 
@@ -215,10 +195,65 @@ An S3 Bucket was created to store our Geojson data.
 
 # Front End
 
-- Build a GitHub page as a dashboard for the project (HTML, CSS, JavaScript) including some information about methane, a map showing GDP, methane emissions, and a ratio emissions/GDP for each country
-- Using Tableau to get a better visualization for the final GitHub page.
+- Build a GitHub page as a dashboard for the project (HTML, CSS, JavaScript) including some information about methane, a map showing GDP:
+
+![images/map_gdp.png](images/map_gdp.png)
+
+methane emissions:
+
+![images/map_me.png](images/map_me.png)
+
+ and a ratio emissions/GDP for each country:
+
+![images/map_ratio.png](images/map_ratio.png)
+
+- Add a plot representing GDP and emissions by sectors over years 2000-2018 in a specific country chosen from the dropdown menu.
+
+![images/dropdown.png](images/dropdown.png)
+
+- Use Tableau to get a better visualization for the final GitHub page.
+
+Tableau link:
+
+[Tableau visualization](https://public.tableau.com/app/profile/grace.marshall/viz/MethaneEmisions/EmissionsStory?publish=yes)
 
 
+
+## Challenges
+
+The machine learning model was very difficult to manipulate. We tried many different variations of manipulating the data to try and influence the model. 
+
+For example:
+
+1. We added a column dividing emissions and gdp. We then removed emissions and gdp from the dataframe
+2. The year column was scaled and/or categorized 
+3. Get_dummies was used on the country column
+4. The country and sector columns were categorized before using get_dummies
+5. We used a dataframe with all the sectors minus the total sector (and tried all of the above again)
+   etc...
+
+We also tried a Linear Regression model to no avail.
+
+All of these efforts did not provide any further insight than the model above. 
+
+
+
+## Conclusion
+
+We were not able to prove that a machine learning could be used to replicate the data. However, the model could not disprove our null hypothesis. There is a correlation between GDP and emissions. It is clear in the model that over time, as GDP increases so do Emissions. The correlation between emissions and GDP also confirms this. Also on the map we can see that most of the countries have approximately the same methane emission per billion $ of GDP except for Afghanistan and several African countries due to their low GDP and high emissions.
+
+#### What would we have done differently if we had more time allocated for the project:
+
+- Currently there is only plot showing GDP and emissions for China over the years 2000-2018 and the dropdown is not connected to that plot. With more time available we would connect them and populate data to the plot for each country from the dropdown.
+- We would also add our machine learning model to our front end and make in interactive (zoom-in, zoom-out, turn around etc.) 
+
+#### Further Analysis:
+
+1. More data could be beneficial in poviding a more adequate machine learning model. For example: Population data over the years for each country.
+
+2. Knowledge of climate change initiaves. This information would be valuable in studying emissions over time for each country 
+
+   
 
 ## References
 
