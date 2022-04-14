@@ -188,6 +188,23 @@ There is no relation between GDP and emissions.
 
 - GDP and emissions have the highest correlation of about 62%
 
+## Challenges
+
+The machine learning model was very difficult to manipulate. We tried many different variations of manipulating the data to try and influence the model. 
+
+For example:
+
+1. We added a column dividing emissions and gdp. We then removed emissions and gdp from the dataframe
+2. The year column was scaled and/or categorized 
+3. Get_dummies was used on the country column
+4. The country and sector columns were categorized before using get_dummies
+5. We used a dataframe with all the sectors minus the total sector (and tried all of the above again)
+   etc...
+
+We also tried a Linear Regression model to no avail.
+
+All of these efforts did not provide any further insight than the model above. 
+
 
 # Front End
 
@@ -214,26 +231,6 @@ methane emissions:
 Tableau link:
 
 [Tableau visualization](https://public.tableau.com/app/profile/grace.marshall/viz/MethaneEmisions/EmissionsStory?publish=yes)
-
-
-
-## Challenges
-
-The machine learning model was very difficult to manipulate. We tried many different variations of manipulating the data to try and influence the model. 
-
-For example:
-
-1. We added a column dividing emissions and gdp. We then removed emissions and gdp from the dataframe
-2. The year column was scaled and/or categorized 
-3. Get_dummies was used on the country column
-4. The country and sector columns were categorized before using get_dummies
-5. We used a dataframe with all the sectors minus the total sector (and tried all of the above again)
-   etc...
-
-We also tried a Linear Regression model to no avail.
-
-All of these efforts did not provide any further insight than the model above. 
-
 
 
 ## Conclusion
